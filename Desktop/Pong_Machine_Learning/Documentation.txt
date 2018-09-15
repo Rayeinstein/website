@@ -1,0 +1,106 @@
+p1: left player
+	AI
+p2: right player
+	Human interface
+
+victory:
+	p1 lose
+	p2 wins
+defeat:
+	p1 wins
+	p2 lose
+Up:
+	1
+	"up"
+Down:
+	0
+	"down"
+
+Times:
+	Learn_Pong:
+		
+		data:	1,000 
+		time:	6.7s}
+		
+		data:	50,000
+		time:	100s, 175s(w/weights)
+
+		data:	50,000
+		type:	p1 only
+		time:	1,000(w/weights)
+		
+
+	Pong_Model:
+
+		data:	1000
+		time:	35s
+		EPOCHS: 10
+		NN:		64,64,1
+		patnce:	100
+		TstErr:	.50
+		Points:
+
+		data:	50,000
+		time:	97s
+		EPOCHS: 10
+		NN:		64,64,1
+		patnce:	100
+		TstErr:	.51
+		Points:
+
+		data:	50,000
+		time:	46s
+		EPOCHS: 10
+		NN:		10,10,1
+		patnce:	100
+		TstErr:	.62
+		Points: -94
+
+		data:	50,000
+		time:	641s
+		EPOCHS: 255
+		NN:		100,100,1
+		Val_ls:	.66-.67
+		patnce:	100
+		Gradient Descent(.001)
+		Score	:-150
+
+		data:	50,000
+		time:	?
+		EPOCHS: ?
+		NN:		100,100,1
+		Val_ls:	.66-.67
+		patnce:	100
+		Gradient Descent(.001)
+		Score	:-84
+
+		data:	50,000
+		time:	?
+		EPOCHS: 500
+		NN:		100,100,1
+		Val_ls:	.55
+		patnce:	100
+		Gradient Descent(.001)
+		Score	:-84
+
+		data:	50,000(picky data, only getting when player hits, with differnt weights)
+		time:	?
+		EPOCHS: 500
+		NN:		100,100,1
+		Val_ls:	?
+		patnce:	100
+		Gradient Descent(.001)
+		Score	:200
+
+
+
+Running Model:
+	algorithm_vel:	-8
+	algorithm_pos:	-
+	rand		 :	-
+	Pong_Model	 :	-150
+
+
+
+
+
